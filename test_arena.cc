@@ -1,5 +1,6 @@
 #include "arena.h"
 #include <stdlib.h>
+#include <iostream>
 
 int main() { 
     tlsf::tlsf_internal::Arena arena; 

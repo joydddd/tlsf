@@ -3,7 +3,7 @@
 namespace tlsf{
 template <class T>
 tlsf_allocator<T>::tlsf_allocator()throw(){
-    tlsf_create();
+    tlsf_create(arena.Alloc());
 }
 
 // template <class T>
@@ -22,7 +22,7 @@ tlsf_allocator<T>::~tlsf_allocator()throw(){
 }
 
 template <class T>
-tlsf_allocator<T>::pointer tlsf_allocator<T>::allocate(tlsf_allocator<T>::size_type size, const void* hint)throw() {
+typename tlsf_allocator<T>::pointer tlsf_allocator<T>::allocate(tlsf_allocator<T>::size_type size, const void* hint)throw() {
     pointer rt;
     rt = tlsf_malloc(tlsf, size * sizeof(T));
     if (rt) return rt;
@@ -34,12 +34,12 @@ tlsf_allocator<T>::pointer tlsf_allocator<T>::allocate(tlsf_allocator<T>::size_t
 }
 
 template <class T>
-void tlsf_allocator<T>::deallocate(pointer p, size_type n){
+void tlsf_allocator<T>::deallocate(pointer p, size_type n)throw(){
     tlsf_free(tlsf, p);
 }
 
 template <class T>
-tlsf_allocator<T>::size_type tlsf_allocator<T>::max_size() const throw() {
+typename tlsf_allocator<T>::size_type tlsf_allocator<T>::max_size() const throw() {
     return tlsf_internal::PAGE_SIZE;
 }
 
