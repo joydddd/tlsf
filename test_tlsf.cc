@@ -9,7 +9,6 @@ int main() {
     void* mem2 = malloc(PAGE_SIZE);
     tlsf_t tlsf = tlsf_create(mem);
     pool_t pool1 = tlsf_add_pool(tlsf, mem1, PAGE_SIZE);
-    pool_t pool2 = tlsf_add_pool(tlsf, mem2, PAGE_SIZE);
 
     void* array1 = tlsf_malloc(tlsf, 100*sizeof(int));
     for (int i = 0; i < 100;i++){
@@ -27,4 +26,6 @@ int main() {
     for (int i = 0; i < 10; i++) {
         if (((int*)array2)[i] != i) exit(1);
     }
+
+    pool_t pool2 = tlsf_add_pool(tlsf, mem2, PAGE_SIZE);
 }

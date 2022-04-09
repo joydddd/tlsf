@@ -1,15 +1,19 @@
 TESTSOURCES = $(wildcard test*.cc)
 TESTS = $(TESTSOURCES:test_%.cc=test%)
+SRC := $(wildcard *.cc)
+SRC := $(filter-out $(TESTSOURCES), $(SRC))
 
 INC=-I ..
 
-CFLAGS= -Wall
+CFLAGS= -Wall -g
 CFLAGS+=$(INC)
 .PHONY: tests, clean
 tests: $(TESTS)
 
 %.test: test_%.cc %.cc %.h
-	@g++ $(CFLAGS) -o $@ $^
+	g++ $(CFLAGS) -o $@ $^
+lib.test: test_lib.cc $(SRC)
+	g++ $(CFLAGS) -o $@ $^
 
 test%: %.test
 	@echo "\033[1;34mTESTING $@\033[0m"
@@ -21,4 +25,4 @@ test%: %.test
 	fi
 
 clean:
-	rm *.test
+	rm -f *.test

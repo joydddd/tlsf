@@ -15,7 +15,11 @@ Arena::~Arena() {
 }
 
 void* Arena::Alloc() {
-    if (pages_allocated >= MAX_PAGES) return NULL;
+    if (pages_allocated >= MAX_PAGES) {
+        std::cerr << "Failed to allocate new page: exceeding MAX_PAGE"
+                  << std::endl;
+        return NULL;
+    }
     void* new_page = nullptr;
     new_page =
         mmap((void*)0x0U, PAGE_SIZE, PROT_READ | PROT_WRITE , MAP_HUGETLB | MAP_PRIVATE | MAP_ANONYMOUS, 0, 0);
