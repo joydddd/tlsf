@@ -4,9 +4,7 @@
 
 int main() { 
     tlsf::tlsf_allocator<int> Allocator;
-    std::cerr << "return from allocator " << std::endl;
     int* array1 = Allocator.allocate(100);
-    std::cout << "array 1 addr " << (long unsigned int)array1 << std::endl;
     int* array2 = Allocator.allocate(200);
     for (size_t i = 0; i < 100; i++){
         array1[i] = i;
@@ -25,4 +23,19 @@ int main() {
 
     Allocator.deallocate(array1, 100);
     Allocator.deallocate(array2, 200);
+    // std::cout << "check" << std::endl;
+
+    /* alloc and free interface */
+    tlsf::global_init();
+    // std::cout << "init finish" << std::endl;
+    int* vec1 = (int*)tlsf::malloc(100 * sizeof(int));
+    // std::cout << "vec addr " << (long unsigned int)vec1 << std::endl;
+    for (int i = 0; i < 100; i++) {
+        vec1[i] = i;
+    }
+    for (int i = 0; i < 100;i++){
+        if (vec1[i] != i) exit(1);
+    }
+
+    tlsf::free(vec1);
 }

@@ -51,4 +51,17 @@ bool operator==(const tlsf_allocator<T>&, const tlsf_allocator<U>&) throw();
 template <class T, class U>
 bool operator!=(const tlsf_allocator<T>&, const tlsf_allocator<U>&) throw();
 
+extern tlsf_internal::Arena global_arena;
+extern tlsf_t global_tlsf;
+
+void global_init();
+
+void* malloc(size_t size);
+
+void* calloc(size_t num, size_t size);
+
+void* realloc(void* ptr, size_t new_size);
+
+void free(void* ptr);
+
 }  // namespace std
