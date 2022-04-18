@@ -11,6 +11,12 @@ void global_init() {
 }
 
 void* malloc(size_t size) {
+    if (global_tlsf == NULL) {
+        // fprintf(stderr, "global_tlsf not initialized");
+        global_init();
+    }
+    // fprintf(stderr, "using tlsf malloc size: %d\n", size);
+
     void* ptr = tlsf_malloc(global_tlsf, size);
     if (!ptr)
         tlsf_add_pool(global_tlsf, global_arena.Alloc(),
@@ -31,5 +37,7 @@ void* realloc(void* ptr, size_t new_size) {
     return tlsf_realloc(global_tlsf, ptr, new_size);
 }
 
-void free(void* ptr) { tlsf_free(global_tlsf, ptr); }
+void free(void* ptr) { 
+    // fprintf(stderr, "using tlsf free");
+    tlsf_free(global_tlsf, ptr); }
 }

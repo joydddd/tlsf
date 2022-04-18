@@ -1,0 +1,468 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x2340
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          36296 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         11
+  Size of section headers:           64 (bytes)
+  Number of section headers:         30
+  Section header string table index: 29
+
+Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+       0000000000000000  0000000000000000           0     0     0
+  [ 1] .note.gnu.propert NOTE             00000000000002a8  000002a8
+       0000000000000020  0000000000000000   A       0     0     8
+  [ 2] .note.gnu.build-i NOTE             00000000000002c8  000002c8
+       0000000000000024  0000000000000000   A       0     0     4
+  [ 3] .gnu.hash         GNU_HASH         00000000000002f0  000002f0
+       0000000000000100  0000000000000000   A       4     0     8
+  [ 4] .dynsym           DYNSYM           00000000000003f0  000003f0
+       00000000000004f8  0000000000000018   A       5     1     8
+  [ 5] .dynstr           STRTAB           00000000000008e8  000008e8
+       00000000000003ed  0000000000000000   A       0     0     1
+  [ 6] .gnu.version      VERSYM           0000000000000cd6  00000cd6
+       000000000000006a  0000000000000002   A       4     0     2
+  [ 7] .gnu.version_r    VERNEED          0000000000000d40  00000d40
+       0000000000000060  0000000000000000   A       5     2     8
+  [ 8] .rela.dyn         RELA             0000000000000da0  00000da0
+       0000000000000168  0000000000000018   A       4     0     8
+  [ 9] .rela.plt         RELA             0000000000000f08  00000f08
+       0000000000000240  0000000000000018  AI       4    23     8
+  [10] .init             PROGBITS         0000000000002000  00002000
+       000000000000001b  0000000000000000  AX       0     0     4
+  [11] .plt              PROGBITS         0000000000002020  00002020
+       0000000000000190  0000000000000010  AX       0     0     16
+  [12] .plt.got          PROGBITS         00000000000021b0  000021b0
+       0000000000000010  0000000000000010  AX       0     0     16
+  [13] .plt.sec          PROGBITS         00000000000021c0  000021c0
+       0000000000000180  0000000000000010  AX       0     0     16
+  [14] .text             PROGBITS         0000000000002340  00002340
+       0000000000002611  0000000000000000  AX       0     0     16
+  [15] .fini             PROGBITS         0000000000004954  00004954
+       000000000000000d  0000000000000000  AX       0     0     4
+  [16] .rodata           PROGBITS         0000000000005000  00005000
+       0000000000000e9a  0000000000000000   A       0     0     8
+  [17] .eh_frame_hdr     PROGBITS         0000000000005e9c  00005e9c
+       0000000000000284  0000000000000000   A       0     0     4
+  [18] .eh_frame         PROGBITS         0000000000006120  00006120
+       0000000000000a08  0000000000000000   A       0     0     8
+  [19] .init_array       INIT_ARRAY       0000000000007dc0  00006dc0
+       0000000000000018  0000000000000008  WA       0     0     8
+  [20] .fini_array       FINI_ARRAY       0000000000007dd8  00006dd8
+       0000000000000008  0000000000000008  WA       0     0     8
+  [21] .dynamic          DYNAMIC          0000000000007de0  00006de0
+       00000000000001d0  0000000000000010  WA       5     0     8
+  [22] .got              PROGBITS         0000000000007fb0  00006fb0
+       0000000000000050  0000000000000008  WA       0     0     8
+  [23] .got.plt          PROGBITS         0000000000008000  00007000
+       00000000000000d8  0000000000000008  WA       0     0     8
+  [24] .data             PROGBITS         00000000000080d8  000070d8
+       0000000000000008  0000000000000000  WA       0     0     8
+  [25] .bss              NOBITS           00000000000080e0  000070e0
+       0000000000002038  0000000000000000  WA       0     0     32
+  [26] .comment          PROGBITS         0000000000000000  000070e0
+       000000000000002b  0000000000000001  MS       0     0     1
+  [27] .symtab           SYMTAB           0000000000000000  00007110
+       0000000000000ee8  0000000000000018          28   107     8
+  [28] .strtab           STRTAB           0000000000000000  00007ff8
+       0000000000000cc0  0000000000000000           0     0     1
+  [29] .shstrtab         STRTAB           0000000000000000  00008cb8
+       000000000000010d  0000000000000000           0     0     1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  l (large), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000001148 0x0000000000001148  R      0x1000
+  LOAD           0x0000000000002000 0x0000000000002000 0x0000000000002000
+                 0x0000000000002961 0x0000000000002961  R E    0x1000
+  LOAD           0x0000000000005000 0x0000000000005000 0x0000000000005000
+                 0x0000000000001b28 0x0000000000001b28  R      0x1000
+  LOAD           0x0000000000006dc0 0x0000000000007dc0 0x0000000000007dc0
+                 0x0000000000000320 0x0000000000002358  RW     0x1000
+  DYNAMIC        0x0000000000006de0 0x0000000000007de0 0x0000000000007de0
+                 0x00000000000001d0 0x00000000000001d0  RW     0x8
+  NOTE           0x00000000000002a8 0x00000000000002a8 0x00000000000002a8
+                 0x0000000000000020 0x0000000000000020  R      0x8
+  NOTE           0x00000000000002c8 0x00000000000002c8 0x00000000000002c8
+                 0x0000000000000024 0x0000000000000024  R      0x4
+  GNU_PROPERTY   0x00000000000002a8 0x00000000000002a8 0x00000000000002a8
+                 0x0000000000000020 0x0000000000000020  R      0x8
+  GNU_EH_FRAME   0x0000000000005e9c 0x0000000000005e9c 0x0000000000005e9c
+                 0x0000000000000284 0x0000000000000284  R      0x4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     0x10
+  GNU_RELRO      0x0000000000006dc0 0x0000000000007dc0 0x0000000000007dc0
+                 0x0000000000000240 0x0000000000000240  R      0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .note.gnu.property .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt 
+   01     .init .plt .plt.got .plt.sec .text .fini 
+   02     .rodata .eh_frame_hdr .eh_frame 
+   03     .init_array .fini_array .dynamic .got .got.plt .data .bss 
+   04     .dynamic 
+   05     .note.gnu.property 
+   06     .note.gnu.build-id 
+   07     .note.gnu.property 
+   08     .eh_frame_hdr 
+   09     
+   10     .init_array .fini_array .dynamic .got 
+
+Dynamic section at offset 0x6de0 contains 25 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000c (INIT)               0x2000
+ 0x000000000000000d (FINI)               0x4954
+ 0x0000000000000019 (INIT_ARRAY)         0x7dc0
+ 0x000000000000001b (INIT_ARRAYSZ)       24 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x7dd8
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x2f0
+ 0x0000000000000005 (STRTAB)             0x8e8
+ 0x0000000000000006 (SYMTAB)             0x3f0
+ 0x000000000000000a (STRSZ)              1005 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x8000
+ 0x0000000000000002 (PLTRELSZ)           576 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0xf08
+ 0x0000000000000007 (RELA)               0xda0
+ 0x0000000000000008 (RELASZ)             360 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0xd40
+ 0x000000006fffffff (VERNEEDNUM)         2
+ 0x000000006ffffff0 (VERSYM)             0xcd6
+ 0x000000006ffffff9 (RELACOUNT)          5
+ 0x0000000000000000 (NULL)               0x0
+
+Relocation section '.rela.dyn' at offset 0xda0 contains 15 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+000000007dc0  000000000008 R_X86_64_RELATIVE                    23f0
+000000007dc8  000000000008 R_X86_64_RELATIVE                    258e
+000000007dd0  000000000008 R_X86_64_RELATIVE                    27bd
+000000007dd8  000000000008 R_X86_64_RELATIVE                    23b0
+0000000080d8  000000000008 R_X86_64_RELATIVE                    80d8
+000000007fb0  000200000006 R_X86_64_GLOB_DAT 0000000000000000 __gmon_start__ + 0
+000000007fb8  000500000006 R_X86_64_GLOB_DAT 0000000000000000 _ZSt4cerr@GLIBCXX_3.4 + 0
+000000007fc0  000700000006 R_X86_64_GLOB_DAT 0000000000000000 _ZNSt8ios_base4InitD1E@GLIBCXX_3.4 + 0
+000000007fc8  000800000006 R_X86_64_GLOB_DAT 0000000000000000 _ITM_deregisterTMClone + 0
+000000007fd0  003300000006 R_X86_64_GLOB_DAT 0000000000008100 _ZN4tlsf12global_arena + 0
+000000007fd8  000a00000006 R_X86_64_GLOB_DAT 0000000000000000 _ITM_registerTMCloneTa + 0
+000000007fe0  000b00000006 R_X86_64_GLOB_DAT 0000000000000000 __cxa_finalize@GLIBC_2.2.5 + 0
+000000007fe8  002b00000006 R_X86_64_GLOB_DAT 0000000000002414 _ZN4tlsf13tlsf_interna + 0
+000000007ff0  001500000006 R_X86_64_GLOB_DAT 000000000000a108 _ZN4tlsf11global_tlsfE + 0
+000000007ff8  000f00000006 R_X86_64_GLOB_DAT 0000000000000000 _ZSt4endlIcSt11char_tr@GLIBCXX_3.4 + 0
+
+Relocation section '.rela.plt' at offset 0xf08 contains 24 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+000000008018  003100000007 R_X86_64_JUMP_SLO 00000000000048b0 _Z8tlsf_ffsj + 0
+000000008020  000100000007 R_X86_64_JUMP_SLO 0000000000000000 printf@GLIBC_2.2.5 + 0
+000000008028  002300000007 R_X86_64_JUMP_SLO 0000000000004082 tlsf_pool_overhead + 0
+000000008030  000300000007 R_X86_64_JUMP_SLO 0000000000000000 __assert_fail@GLIBC_2.2.5 + 0
+000000008038  000400000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt8ios_base4InitC1E@GLIBCXX_3.4 + 0
+000000008040  003200000007 R_X86_64_JUMP_SLO 00000000000025ff malloc + 0
+000000008048  000600000007 R_X86_64_JUMP_SLO 0000000000000000 __cxa_atexit@GLIBC_2.2.5 + 0
+000000008050  000900000007 R_X86_64_JUMP_SLO 0000000000000000 _ZStlsISt11char_traits@GLIBCXX_3.4 + 0
+000000008058  002f00000007 R_X86_64_JUMP_SLO 000000000000432c tlsf_create + 0
+000000008060  001800000007 R_X86_64_JUMP_SLO 00000000000048d1 _Z8tlsf_flsj + 0
+000000008068  002800000007 R_X86_64_JUMP_SLO 0000000000004402 tlsf_malloc + 0
+000000008070  000c00000007 R_X86_64_JUMP_SLO 0000000000000000 __stack_chk_fail@GLIBC_2.4 + 0
+000000008078  002000000007 R_X86_64_JUMP_SLO 00000000000046c2 tlsf_realloc + 0
+000000008080  000d00000007 R_X86_64_JUMP_SLO 0000000000000000 munmap@GLIBC_2.2.5 + 0
+000000008088  000e00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSolsEPFRSoS_E@GLIBCXX_3.4 + 0
+000000008090  002d00000007 R_X86_64_JUMP_SLO 00000000000023fa _ZN4tlsf13tlsf_interna + 0
+000000008098  002c00000007 R_X86_64_JUMP_SLO 000000000000460b tlsf_free + 0
+0000000080a0  001c00000007 R_X86_64_JUMP_SLO 000000000000245e _ZN4tlsf13tlsf_interna + 0
+0000000080a8  001600000007 R_X86_64_JUMP_SLO 0000000000004041 tlsf_size + 0
+0000000080b0  001300000007 R_X86_64_JUMP_SLO 00000000000040a0 tlsf_add_pool + 0
+0000000080b8  002100000007 R_X86_64_JUMP_SLO 0000000000003ecd tlsf_walk_pool + 0
+0000000080c0  002200000007 R_X86_64_JUMP_SLO 0000000000004904 _Z14tlsf_fls_sizetm + 0
+0000000080c8  001000000007 R_X86_64_JUMP_SLO 0000000000000000 memcpy@GLIBC_2.14 + 0
+0000000080d0  001100000007 R_X86_64_JUMP_SLO 0000000000000000 mmap@GLIBC_2.2.5 + 0
+
+The decoding of unwind sections for machine type Advanced Micro Devices X86-64 is not currently supported.
+
+Symbol table '.dynsym' contains 53 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.2.5 (2)
+     2: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __assert_fail@GLIBC_2.2.5 (2)
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_base4InitC1Ev@GLIBCXX_3.4 (3)
+     5: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND _ZSt4cerr@GLIBCXX_3.4 (3)
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@GLIBC_2.2.5 (2)
+     7: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_base4InitD1Ev@GLIBCXX_3.4 (3)
+     8: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZStlsISt11char_traitsIcE@GLIBCXX_3.4 (3)
+    10: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    11: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
+    12: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@GLIBC_2.4 (4)
+    13: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND munmap@GLIBC_2.2.5 (2)
+    14: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSolsEPFRSoS_E@GLIBCXX_3.4 (3)
+    15: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZSt4endlIcSt11char_trait@GLIBCXX_3.4 (3)
+    16: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_2.14 (5)
+    17: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND mmap@GLIBC_2.2.5 (2)
+    18: 0000000000004050    15 FUNC    GLOBAL DEFAULT   14 tlsf_align_size
+    19: 00000000000040a0   332 FUNC    GLOBAL DEFAULT   14 tlsf_add_pool
+    20: 00000000000043d5    15 FUNC    GLOBAL DEFAULT   14 tlsf_destroy
+    21: 000000000000a108     8 OBJECT  GLOBAL DEFAULT   25 _ZN4tlsf11global_tlsfE
+    22: 0000000000004041    15 FUNC    GLOBAL DEFAULT   14 tlsf_size
+    23: 0000000000002715    44 FUNC    GLOBAL DEFAULT   14 free
+    24: 00000000000048d1    51 FUNC    WEAK   DEFAULT   14 _Z8tlsf_flsj
+    25: 00000000000026e2    51 FUNC    GLOBAL DEFAULT   14 realloc
+    26: 00000000000043e4    30 FUNC    GLOBAL DEFAULT   14 tlsf_get_pool
+    27: 0000000000003a59  1040 FUNC    GLOBAL DEFAULT   14 tlsf_check
+    28: 000000000000245e   227 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+    29: 0000000000003f9f    69 FUNC    GLOBAL DEFAULT   14 tlsf_block_size
+    30: 00000000000041ec   320 FUNC    GLOBAL DEFAULT   14 tlsf_remove_pool
+    31: 0000000000004091    15 FUNC    GLOBAL DEFAULT   14 tlsf_alloc_overhead
+    32: 00000000000046c2   494 FUNC    GLOBAL DEFAULT   14 tlsf_realloc
+    33: 0000000000003ecd   210 FUNC    GLOBAL DEFAULT   14 tlsf_walk_pool
+    34: 0000000000004904    77 FUNC    WEAK   DEFAULT   14 _Z14tlsf_fls_sizetm
+    35: 0000000000004082    15 FUNC    GLOBAL DEFAULT   14 tlsf_pool_overhead
+    36: 000000000000267a   104 FUNC    GLOBAL DEFAULT   14 calloc
+    37: 0000000000004463   424 FUNC    GLOBAL DEFAULT   14 tlsf_memalign
+    38: 0000000000003fe4    93 FUNC    GLOBAL DEFAULT   14 tlsf_check_pool
+    39: 000000000000405f    15 FUNC    GLOBAL DEFAULT   14 tlsf_block_size_min
+    40: 0000000000004402    97 FUNC    GLOBAL DEFAULT   14 tlsf_malloc
+    41: 0000000000004377    94 FUNC    GLOBAL DEFAULT   14 tlsf_create_with_pool
+    42: 000000000000406e    20 FUNC    GLOBAL DEFAULT   14 tlsf_block_size_max
+    43: 0000000000002414    73 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+    44: 000000000000460b   183 FUNC    GLOBAL DEFAULT   14 tlsf_free
+    45: 00000000000023fa    26 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+    46: 0000000000002414    73 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+    47: 000000000000432c    75 FUNC    GLOBAL DEFAULT   14 tlsf_create
+    48: 00000000000023fa    26 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+    49: 00000000000048b0    33 FUNC    WEAK   DEFAULT   14 _Z8tlsf_ffsj
+    50: 00000000000025ff   123 FUNC    GLOBAL DEFAULT   14 malloc
+    51: 0000000000008100  8200 OBJECT  GLOBAL DEFAULT   25 _ZN4tlsf12global_arenaE
+    52: 00000000000025a7    88 FUNC    GLOBAL DEFAULT   14 global_init
+
+Symbol table '.symtab' contains 159 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000000002a8     0 SECTION LOCAL  DEFAULT    1 
+     2: 00000000000002c8     0 SECTION LOCAL  DEFAULT    2 
+     3: 00000000000002f0     0 SECTION LOCAL  DEFAULT    3 
+     4: 00000000000003f0     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000000000008e8     0 SECTION LOCAL  DEFAULT    5 
+     6: 0000000000000cd6     0 SECTION LOCAL  DEFAULT    6 
+     7: 0000000000000d40     0 SECTION LOCAL  DEFAULT    7 
+     8: 0000000000000da0     0 SECTION LOCAL  DEFAULT    8 
+     9: 0000000000000f08     0 SECTION LOCAL  DEFAULT    9 
+    10: 0000000000002000     0 SECTION LOCAL  DEFAULT   10 
+    11: 0000000000002020     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000000021b0     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000000021c0     0 SECTION LOCAL  DEFAULT   13 
+    14: 0000000000002340     0 SECTION LOCAL  DEFAULT   14 
+    15: 0000000000004954     0 SECTION LOCAL  DEFAULT   15 
+    16: 0000000000005000     0 SECTION LOCAL  DEFAULT   16 
+    17: 0000000000005e9c     0 SECTION LOCAL  DEFAULT   17 
+    18: 0000000000006120     0 SECTION LOCAL  DEFAULT   18 
+    19: 0000000000007dc0     0 SECTION LOCAL  DEFAULT   19 
+    20: 0000000000007dd8     0 SECTION LOCAL  DEFAULT   20 
+    21: 0000000000007de0     0 SECTION LOCAL  DEFAULT   21 
+    22: 0000000000007fb0     0 SECTION LOCAL  DEFAULT   22 
+    23: 0000000000008000     0 SECTION LOCAL  DEFAULT   23 
+    24: 00000000000080d8     0 SECTION LOCAL  DEFAULT   24 
+    25: 00000000000080e0     0 SECTION LOCAL  DEFAULT   25 
+    26: 0000000000000000     0 SECTION LOCAL  DEFAULT   26 
+    27: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    28: 0000000000002340     0 FUNC    LOCAL  DEFAULT   14 deregister_tm_clones
+    29: 0000000000002370     0 FUNC    LOCAL  DEFAULT   14 register_tm_clones
+    30: 00000000000023b0     0 FUNC    LOCAL  DEFAULT   14 __do_global_dtors_aux
+    31: 00000000000080e0     1 OBJECT  LOCAL  DEFAULT   25 completed.8061
+    32: 0000000000007dd8     0 OBJECT  LOCAL  DEFAULT   20 __do_global_dtors_aux_fin
+    33: 00000000000023f0     0 FUNC    LOCAL  DEFAULT   14 frame_dummy
+    34: 0000000000007dc0     0 OBJECT  LOCAL  DEFAULT   19 __frame_dummy_init_array_
+    35: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS arena.cc
+    36: 0000000000005000     8 OBJECT  LOCAL  DEFAULT   16 _ZN4tlsf13tlsf_internalL9
+    37: 0000000000005008     8 OBJECT  LOCAL  DEFAULT   16 _ZN4tlsf13tlsf_internalL9
+    38: 0000000000005010     1 OBJECT  LOCAL  DEFAULT   16 _ZStL19piecewise_construc
+    39: 00000000000080e1     1 OBJECT  LOCAL  DEFAULT   25 _ZStL8__ioinit
+    40: 0000000000002541    77 FUNC    LOCAL  DEFAULT   14 _Z41__static_initializati
+    41: 000000000000258e    25 FUNC    LOCAL  DEFAULT   14 _GLOBAL__sub_I_arena.cc
+    42: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS tlsf_lib.cc
+    43: 0000000000005060     8 OBJECT  LOCAL  DEFAULT   16 _ZN4tlsf13tlsf_internalL9
+    44: 0000000000005068     8 OBJECT  LOCAL  DEFAULT   16 _ZN4tlsf13tlsf_internalL9
+    45: 0000000000005070     1 OBJECT  LOCAL  DEFAULT   16 _ZStL19piecewise_construc
+    46: 000000000000a110     1 OBJECT  LOCAL  DEFAULT   25 _ZStL8__ioinit
+    47: 0000000000002741   124 FUNC    LOCAL  DEFAULT   14 _Z41__static_initializati
+    48: 00000000000027bd    25 FUNC    LOCAL  DEFAULT   14 _GLOBAL__sub_I_tlsf_lib.c
+    49: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS tlsf.cc
+    50: 0000000000005078     8 OBJECT  LOCAL  DEFAULT   16 _ZL21block_header_free_bi
+    51: 0000000000005080     8 OBJECT  LOCAL  DEFAULT   16 _ZL26block_header_prev_fr
+    52: 0000000000005088     8 OBJECT  LOCAL  DEFAULT   16 _ZL21block_header_overhea
+    53: 0000000000005090     8 OBJECT  LOCAL  DEFAULT   16 _ZL18block_start_offset
+    54: 0000000000005098     8 OBJECT  LOCAL  DEFAULT   16 _ZL14block_size_min
+    55: 00000000000050a0     8 OBJECT  LOCAL  DEFAULT   16 _ZL14block_size_max
+    56: 00000000000027d6    26 FUNC    LOCAL  DEFAULT   14 _ZL10block_sizePK14block_
+    57: 00000000000027f0    53 FUNC    LOCAL  DEFAULT   14 _ZL14block_set_sizeP14blo
+    58: 0000000000002825    39 FUNC    LOCAL  DEFAULT   14 _ZL13block_is_lastPK14blo
+    59: 000000000000284c    25 FUNC    LOCAL  DEFAULT   14 _ZL13block_is_freePK14blo
+    60: 0000000000002865    38 FUNC    LOCAL  DEFAULT   14 _ZL14block_set_freeP14blo
+    61: 000000000000288b    38 FUNC    LOCAL  DEFAULT   14 _ZL14block_set_usedP14blo
+    62: 00000000000028b1    25 FUNC    LOCAL  DEFAULT   14 _ZL18block_is_prev_freePK
+    63: 00000000000028ca    38 FUNC    LOCAL  DEFAULT   14 _ZL19block_set_prev_freeP
+    64: 00000000000028f0    38 FUNC    LOCAL  DEFAULT   14 _ZL19block_set_prev_usedP
+    65: 0000000000002916    22 FUNC    LOCAL  DEFAULT   14 _ZL14block_from_ptrPKv
+    66: 000000000000292c    22 FUNC    LOCAL  DEFAULT   14 _ZL12block_to_ptrPK14bloc
+    67: 0000000000002942    29 FUNC    LOCAL  DEFAULT   14 _ZL15offset_to_blockPKvm
+    68: 000000000000295f    73 FUNC    LOCAL  DEFAULT   14 _ZL10block_prevPK14block_
+    69: 00000000000029a8   118 FUNC    LOCAL  DEFAULT   14 _ZL10block_nextPK14block_
+    70: 0000000000002a1e    49 FUNC    LOCAL  DEFAULT   14 _ZL15block_link_nextP14bl
+    71: 0000000000002a4f    59 FUNC    LOCAL  DEFAULT   14 _ZL18block_mark_as_freeP1
+    72: 0000000000002a8a    59 FUNC    LOCAL  DEFAULT   14 _ZL18block_mark_as_usedP1
+    73: 0000000000002ac5    95 FUNC    LOCAL  DEFAULT   14 _ZL8align_upmm
+    74: 0000000000002b24    81 FUNC    LOCAL  DEFAULT   14 _ZL10align_downmm
+    75: 0000000000002b75   103 FUNC    LOCAL  DEFAULT   14 _ZL9align_ptrPKvm
+    76: 0000000000002bdc    97 FUNC    LOCAL  DEFAULT   14 _ZL19adjust_request_sizem
+    77: 0000000000002c3d   125 FUNC    LOCAL  DEFAULT   14 _ZL14mapping_insertmPiS_
+    78: 0000000000002cba   103 FUNC    LOCAL  DEFAULT   14 _ZL14mapping_searchmPiS_
+    79: 0000000000002d21   266 FUNC    LOCAL  DEFAULT   14 _ZL21search_suitable_bloc
+    80: 0000000000002e2b   351 FUNC    LOCAL  DEFAULT   14 _ZL17remove_free_blockP9c
+    81: 0000000000002f8a   380 FUNC    LOCAL  DEFAULT   14 _ZL17insert_free_blockP9c
+    82: 0000000000003106   114 FUNC    LOCAL  DEFAULT   14 _ZL12block_removeP9contro
+    83: 0000000000003178   114 FUNC    LOCAL  DEFAULT   14 _ZL12block_insertP9contro
+    84: 00000000000031ea    51 FUNC    LOCAL  DEFAULT   14 _ZL15block_can_splitP14bl
+    85: 000000000000321d   331 FUNC    LOCAL  DEFAULT   14 _ZL11block_splitP14block_
+    86: 0000000000003368   121 FUNC    LOCAL  DEFAULT   14 _ZL12block_absorbP14block
+    87: 00000000000033e1   195 FUNC    LOCAL  DEFAULT   14 _ZL16block_merge_prevP9co
+    88: 00000000000034a4   191 FUNC    LOCAL  DEFAULT   14 _ZL16block_merge_nextP9co
+    89: 0000000000003563   169 FUNC    LOCAL  DEFAULT   14 _ZL15block_trim_freeP9con
+    90: 000000000000360c   180 FUNC    LOCAL  DEFAULT   14 _ZL15block_trim_usedP9con
+    91: 00000000000036c0   136 FUNC    LOCAL  DEFAULT   14 _ZL23block_trim_free_lead
+    92: 0000000000003748   226 FUNC    LOCAL  DEFAULT   14 _ZL17block_locate_freeP9c
+    93: 000000000000382a   134 FUNC    LOCAL  DEFAULT   14 _ZL18block_prepare_usedP9
+    94: 00000000000038b0   146 FUNC    LOCAL  DEFAULT   14 _ZL17control_constructP9c
+    95: 0000000000003942   279 FUNC    LOCAL  DEFAULT   14 _ZL16integrity_walkerPvmi
+    96: 0000000000003e69   100 FUNC    LOCAL  DEFAULT   14 _ZL14default_walkerPvmiS_
+    97: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    98: 0000000000006b24     0 OBJECT  LOCAL  DEFAULT   18 __FRAME_END__
+    99: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 
+   100: 0000000000005e9c     0 NOTYPE  LOCAL  DEFAULT   17 __GNU_EH_FRAME_HDR
+   101: 0000000000004954     0 FUNC    LOCAL  DEFAULT   15 _fini
+   102: 0000000000008000     0 OBJECT  LOCAL  DEFAULT   23 _GLOBAL_OFFSET_TABLE_
+   103: 00000000000080e0     0 OBJECT  LOCAL  DEFAULT   24 __TMC_END__
+   104: 00000000000080d8     0 OBJECT  LOCAL  DEFAULT   24 __dso_handle
+   105: 0000000000007de0     0 OBJECT  LOCAL  DEFAULT   21 _DYNAMIC
+   106: 0000000000002000     0 FUNC    LOCAL  DEFAULT   10 _init
+   107: 00000000000048b0    33 FUNC    WEAK   DEFAULT   14 _Z8tlsf_ffsj
+   108: 000000000000405f    15 FUNC    GLOBAL DEFAULT   14 tlsf_block_size_min
+   109: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND printf@@GLIBC_2.2.5
+   110: 000000000000406e    20 FUNC    GLOBAL DEFAULT   14 tlsf_block_size_max
+   111: 0000000000004082    15 FUNC    GLOBAL DEFAULT   14 tlsf_pool_overhead
+   112: 000000000000267a   104 FUNC    GLOBAL DEFAULT   14 calloc
+   113: 0000000000004463   424 FUNC    GLOBAL DEFAULT   14 tlsf_memalign
+   114: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+   115: 00000000000026e2    51 FUNC    GLOBAL DEFAULT   14 realloc
+   116: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __assert_fail@@GLIBC_2.2.
+   117: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_base4InitC1Ev@@
+   118: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND _ZSt4cerr@@GLIBCXX_3.4
+   119: 00000000000025ff   123 FUNC    GLOBAL DEFAULT   14 malloc
+   120: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@@GLIBC_2.2.5
+   121: 0000000000004091    15 FUNC    GLOBAL DEFAULT   14 tlsf_alloc_overhead
+   122: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_base4InitD1Ev@@
+   123: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+   124: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZStlsISt11char_traitsIcE
+   125: 0000000000008100  8200 OBJECT  GLOBAL DEFAULT   25 _ZN4tlsf12global_arenaE
+   126: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+   127: 0000000000004050    15 FUNC    GLOBAL DEFAULT   14 tlsf_align_size
+   128: 000000000000432c    75 FUNC    GLOBAL DEFAULT   14 tlsf_create
+   129: 00000000000048d1    51 FUNC    WEAK   DEFAULT   14 _Z8tlsf_flsj
+   130: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@GLIBC_2.2
+   131: 00000000000025a7    88 FUNC    GLOBAL DEFAULT   14 global_init
+   132: 0000000000004402    97 FUNC    GLOBAL DEFAULT   14 tlsf_malloc
+   133: 00000000000043e4    30 FUNC    GLOBAL DEFAULT   14 tlsf_get_pool
+   134: 00000000000023fa    26 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+   135: 0000000000002414    73 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+   136: 0000000000003f9f    69 FUNC    GLOBAL DEFAULT   14 tlsf_block_size
+   137: 0000000000003a59  1040 FUNC    GLOBAL DEFAULT   14 tlsf_check
+   138: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@@GLIBC_2
+   139: 000000000000a108     8 OBJECT  GLOBAL DEFAULT   25 _ZN4tlsf11global_tlsfE
+   140: 00000000000046c2   494 FUNC    GLOBAL DEFAULT   14 tlsf_realloc
+   141: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND munmap@@GLIBC_2.2.5
+   142: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSolsEPFRSoS_E@@GLIBCXX
+   143: 00000000000023fa    26 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+   144: 000000000000460b   183 FUNC    GLOBAL DEFAULT   14 tlsf_free
+   145: 000000000000245e   227 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+   146: 0000000000004041    15 FUNC    GLOBAL DEFAULT   14 tlsf_size
+   147: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZSt4endlIcSt11char_trait
+   148: 0000000000002414    73 FUNC    GLOBAL DEFAULT   14 _ZN4tlsf13tlsf_internal5A
+   149: 00000000000040a0   332 FUNC    GLOBAL DEFAULT   14 tlsf_add_pool
+   150: 0000000000002715    44 FUNC    GLOBAL DEFAULT   14 free
+   151: 0000000000003fe4    93 FUNC    GLOBAL DEFAULT   14 tlsf_check_pool
+   152: 0000000000003ecd   210 FUNC    GLOBAL DEFAULT   14 tlsf_walk_pool
+   153: 0000000000004904    77 FUNC    WEAK   DEFAULT   14 _Z14tlsf_fls_sizetm
+   154: 00000000000041ec   320 FUNC    GLOBAL DEFAULT   14 tlsf_remove_pool
+   155: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@@GLIBC_2.14
+   156: 0000000000004377    94 FUNC    GLOBAL DEFAULT   14 tlsf_create_with_pool
+   157: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND mmap@@GLIBC_2.2.5
+   158: 00000000000043d5    15 FUNC    GLOBAL DEFAULT   14 tlsf_destroy
+
+Histogram for `.gnu.hash' bucket list length (total of 17 buckets):
+ Length  Number     % of total  Coverage
+      0  2          ( 11.8%)
+      1  3          ( 17.6%)      8.6%
+      2  6          ( 35.3%)     42.9%
+      3  4          ( 23.5%)     77.1%
+      4  2          ( 11.8%)    100.0%
+
+Version symbols section '.gnu.version' contains 53 entries:
+ Addr: 0x0000000000000cd6  Offset: 0x000cd6  Link: 4 (.dynsym)
+  000:   0 (*local*)       2 (GLIBC_2.2.5)   0 (*local*)       2 (GLIBC_2.2.5)
+  004:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   2 (GLIBC_2.2.5)   3 (GLIBCXX_3.4)
+  008:   0 (*local*)       3 (GLIBCXX_3.4)   0 (*local*)       2 (GLIBC_2.2.5)
+  00c:   4 (GLIBC_2.4)     2 (GLIBC_2.2.5)   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)
+  010:   5 (GLIBC_2.14)    2 (GLIBC_2.2.5)   1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)   
+
+Version needs section '.gnu.version_r' contains 2 entries:
+ Addr: 0x0000000000000d40  Offset: 0x000d40  Link: 5 (.dynstr)
+  000000: Version: 1  File: libstdc++.so.6  Cnt: 1
+  0x0010:   Name: GLIBCXX_3.4  Flags: none  Version: 3
+  0x0020: Version: 1  File: libc.so.6  Cnt: 3
+  0x0030:   Name: GLIBC_2.14  Flags: none  Version: 5
+  0x0040:   Name: GLIBC_2.4  Flags: none  Version: 4
+  0x0050:   Name: GLIBC_2.2.5  Flags: none  Version: 2
+
+Displaying notes found in: .note.gnu.property
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_PROPERTY_TYPE_0
+      Properties: x86 feature: IBT, SHSTK
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: f8a948ac325236080e354935231fdcd4f748bc67

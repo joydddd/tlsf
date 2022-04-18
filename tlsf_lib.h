@@ -3,11 +3,14 @@
 #include <iostream>
 namespace tlsf {
 
+
+
 template <class T>
 class tlsf_allocator {
     private:
      tlsf_t tlsf_i;
      tlsf_internal::Arena arena;
+
 
     public:
      typedef size_t size_type;
@@ -24,7 +27,9 @@ class tlsf_allocator {
     };
     tlsf_allocator() throw() {
         tlsf_i = tlsf_create(arena.Alloc());
-        tlsf_add_pool(tlsf_i, arena.Alloc(), tlsf_internal::PAGE_SIZE);
+        for(int i=0; i< 4*1024; i++){
+		tlsf_add_pool(tlsf_i, arena.Alloc(), tlsf_internal::PAGE_SIZE);
+	}
     }
     ~tlsf_allocator() throw() { tlsf_destroy(tlsf_i); }
     pointer allocate(size_type size, const void* hint = 0) throw(){
@@ -54,6 +59,10 @@ bool operator!=(const tlsf_allocator<T>&, const tlsf_allocator<U>&) throw();
 extern tlsf_internal::Arena global_arena;
 extern tlsf_t global_tlsf;
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
 void global_init();
 
 void* malloc(size_t size);
@@ -63,5 +72,7 @@ void* calloc(size_t num, size_t size);
 void* realloc(void* ptr, size_t new_size);
 
 void free(void* ptr);
+
+}  // extern "C"
 
 }  // namespace std
