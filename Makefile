@@ -24,5 +24,8 @@ test%: %.test
 	else echo "\033[1;31mFAIL\033[0m with exit code $$EXIT_CODE"; \
 	fi
 
+test_lib:
+	g++ -fPIC --shared ./arena.cc tlsf_lib.cc tlsf.cc -o libtlsf.so
+
 clean:
 	rm -f *.test
